@@ -1,0 +1,7 @@
+---
+- id: google-style-java
+  name: Google Java Code Style for Java
+  entry: reformat
+  description: Formats code in Google's Java codestyle.
+  language: python
+  files: \.java$
