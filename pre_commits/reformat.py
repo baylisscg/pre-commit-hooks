@@ -53,7 +53,7 @@ def main(argv=None):  # type: (Optional[Sequence[str]]) -> int
 
         logging.debug("Runing \"%s\"", ' '.join(command))
 
-        result = subprocess.run(command, capture_output=True)
+        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         return_code = result.returncode
 
